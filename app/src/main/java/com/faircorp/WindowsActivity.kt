@@ -13,6 +13,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+/*
+java.lang.VerifyError: Verifier rejected class com.faircorp.WindowsActivity$onCreate$1: java.lang.Object com.faircorp.WindowsActivity$onCreate$1.invokeSuspend(java.lang.Object) failed to verify: java.lang.Object com.faircorp.WindowsActivity$onCreate$1.invokeSuspend(java.lang.Object): [0x9E] register v2 has type Reference: java.lang.Throwable but expected Precise Reference: kotlin.jvm.internal.Ref$ObjectRef (declaration of 'com.faircorp.WindowsActivity$onCreate$1' appears in /data/app/~~K7jvadRthAsS1We_hrqysA==/com.faircorp-rRIP2OsdFCF-nHd_APsLYw==/base.apk!classes3.dex)
+        at com.faircorp.WindowsActivity.onCreate(WindowsActivity.kt:34)
+*/
+
 class WindowsActivity : BasicActivity() , OnWindowSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
